@@ -1,0 +1,114 @@
+/* page properties */
+html {
+    box-sizing: border-box;
+}
+
+/* *,
+*::before,
+*::after {
+    box-sizing: inherit;
+} */
+
+/* main values */
+body {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: #626262;
+    line-height: 21px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0px;
+    margin-bottom: 13px;
+}
+
+section img {
+     margin-bottom: 30px;
+ }
+
+.article-description {
+    font-family: 'Ubuntu', serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 0px;
+}
+.conteiner {
+    width: 900px;
+    margin: 0 auto;
+}
+ img {
+     margin: 0px;
+ }
+/* navigation line */
+.navigation-menu {
+    margin: 0px;
+    text-align: center;
+    list-style-type: none;
+    padding-top: 75px;
+}
+
+.navigation-menu li {
+    width: 175px;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    text-transform: uppercase;
+    color: #626262;
+}
+
+.navigation-menu a {
+    text-decoration: none;
+    color: #626262;
+}
+
+.navigation-menu a:hover{
+    color: #03a9f4;
+}
+
+/* articles */
+section {
+    padding-top: 90px;
+    text-align: center;
+}
+
+article {
+    width: 420px;
+    height: 480px;
+    display: inline-block;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.article-description{
+    margin-bottom: 20px;
+}
+
+p,
+h2 {
+    text-align: left;
+}
+
+article h2+p {
+    text-align: justify;
+    line-height: 24px;
+    margin: 0px;
+}
+
+.right-article {
+    margin-right: 56px;
+}
+
+/* bottom button */
+button {
+    font-size: 20px;
+    display: inline-block;
+    width: 160px;
+    height: 60px;
+    color: #626262;
+    background-color: #fff;
+    border: 1px solid #818181;
+    margin-bottom: 70px;
+}
