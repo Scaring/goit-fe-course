@@ -1,0 +1,254 @@
+/* FONTS */
+@font-face {
+    font-family: "RobotoBlack"; 
+    src: url(../fonts/Roboto-Black.ttf); 
+}
+@font-face {
+    font-family: "RobotoLight"; 
+    src: url(../fonts/Roboto-Light.ttf); 
+}
+@font-face {
+    font-family: "OpensansBold"; 
+    src: url(../fonts/OpenSans-Bold.ttf); 
+}
+@font-face {
+    font-family: "Opensans"; 
+    src: url(../fonts/OpenSans-Regular.ttf); 
+}
+@font-face {
+    font-family: "OpensansSemibold"; 
+    src: url(../fonts/OpenSans-SemiBold.ttf); 
+}
+@font-face {
+    font-family: "OpensansLight"; 
+    src: url(../fonts/OpenSans-Light.ttf); 
+}
+
+/* * {
+    outline: 1px solid green;
+} */
+body {
+    padding-top: 65px;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 1110px;
+    margin: 0 auto;
+    font-family: "RobotoBlack", serif;
+    font-size: 14px;
+}
+
+header {
+    padding-bottom: 114px;
+}
+
+ul {
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+/* HEADER */
+.logo {
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 540px;
+    vertical-align: middle;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #555252;
+    font-size: 30px;
+    font-family: "RobotoLight";
+}
+
+.logo::first-letter{
+    color: #6cbb9c;
+    font-family: "RobotoBlack";
+}
+
+/* NAVIGATION */
+
+.navigation {
+    display: inline-block;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    padding-left: 15px;
+}
+
+.nav-item:not(:last-child){
+    padding-right: 15px;
+}
+
+.nav-item:hover,
+.nav-item:focus{
+    color: #6cbb9c;
+    cursor: pointer;
+}
+
+/* MAIN */
+h2 {
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 36px;
+    margin-bottom: 80px;
+}
+
+h2::after {
+    display: block;
+    content: "";
+    width: 164px;
+    height: 7px;
+    background-color: rgb(108, 187, 156);
+    margin: 34px auto 94px;
+}
+
+/* PRODUCTS SECTION */
+.products {
+    margin-bottom: 104px;
+}
+
+.products ul {
+    margin: 0;
+    padding: 0;
+    font-size: 0px;
+}
+
+.products li {
+    width: 256px;
+    min-height: 324px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    background-color: #353535;
+} 
+
+.products li:not(:nth-child(4n)){
+    margin-right: 28px;
+}
+
+.products li:not(:nth-child(n +4)){
+    margin-bottom: 30px;
+}
+
+.products img{
+    max-height: 284px;
+    width: 100%;
+}
+
+.description {
+    width: 100%;
+}
+
+.description p{
+    display: inline-block;
+    padding-left: 14px;
+}
+
+.product-name,
+.price{
+    margin: 0;
+    min-height: 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 10px;
+}
+
+.price{
+    float: right;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: rgba(255, 255, 255, .44);
+}
+
+.products li:hover{
+    background-color: #6cbb9c;
+}
+
+/* NEWS */
+
+.news ul {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 80px;
+    font-size: 0px;
+}
+
+.news li {
+    width: 350px;
+    display: inline-block;
+}
+
+.news li:not(:last-child) {
+    margin-right: 26px;
+}
+
+.news h3{
+    margin: 0;
+    padding: 0;
+    font-family: "OpensansSemibold";
+    font-size: 18px;
+    line-height: 26px;
+    padding-top: 12px;
+}
+
+.news h3::after{
+    display: block;
+    content: "";
+    width: 136px;
+    height: 3px;
+    background-color: rgb(108, 187, 156);
+    margin: 16px auto 30px 0px;
+}
+
+.news p{
+    margin: 0;
+    padding: 0;
+    font-family: "Opensans";
+    font-size: 14px;
+    line-height: 26px;
+    padding-bottom: 20px;
+}
+
+.news button{
+    width: 160px;
+    min-height: 54px;
+    font-family: "OpensansLight";
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(127, 197, 171);
+    color: #fff;
+}
+
+.news button:hover,
+.news button:focus{
+    background-color: #353535;
+    color: rgb(127, 197, 171);
+}
