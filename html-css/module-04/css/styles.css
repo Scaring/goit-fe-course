@@ -35,13 +35,8 @@ body {
 .wrapper {
     width: 1110px;
     margin: 0 auto;
-    margin-bottom: 114px;
     font-family: "RobotoBlack", serif;
     font-size: 14px;
-}
-
-main.wrapper{
-    margin-bottom: 80px;
 }
 
 ul {
@@ -62,44 +57,49 @@ ul {
     clear: both;
 }
 /* HEADER */
+header{
+    padding-bottom: 114px;
+}
+
 .logo {
     text-transform: uppercase;
+    float: left;
 }
 
 .logo a{
     text-decoration: none;
-    float: left;
     color: #555252;
     font-size: 30px;
+    line-height: 32px;
     font-family: "RobotoLight";
 }
 
-.logo a::first-letter{
+.logo::first-letter{
     color: #6cbb9c;
     font-family: "RobotoBlack";
 }
 
 /* NAVIGATION */
-.navigation ul {
-    margin: 0;
-    padding: 0;
+.navigation{
+    margin: 0px;
+    padding: 0px;
     float: right;
 }
 
 .navigation li {
-    padding-left: 15px;
-    padding-top: 10px;
+    padding-left: 18px;
     float: left;
     text-transform: uppercase;
 }
 
 .navigation a {
+    display: block;
     text-decoration: none;
     color: #555252;
 }
 
 .nav-item:not(:last-child){
-    padding-right: 15px;
+    padding-right: 18px;
 }
 
 .nav-item a:hover,
@@ -172,9 +172,9 @@ h2::after {
 .product-name,
 .price{
     margin: 0;
-    padding-top: 10px;
     min-height: 30px;
     font-size: 18px;
+    line-height: 40px;
     text-transform: uppercase;
     color: #fff;
 }
@@ -195,6 +195,9 @@ h2::after {
 }
 
 /* NEWS */
+.news {
+    padding-bottom: 80px;
+}
 
 .news ul {
     margin: 0;
