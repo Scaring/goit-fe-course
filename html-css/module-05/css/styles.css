@@ -310,7 +310,7 @@ h2::after {
 
 .add {
     width: 156px;
-    height: auto;
+    min-height: 48px;
     font-family: "Opensans";
     font-size: 14px;
     text-transform: uppercase;
