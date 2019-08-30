@@ -20,28 +20,6 @@
     src: url(../fonts/KaushanScript-Regular.ttf); 
 }
 
-/* ANIMATION */
-@keyframes appear {
-    from { 
-        top: 0;
-        left: 0;
-        opacity: 0; }
-    to { 
-        top: -12px;
-        left: -12px;
-        opacity: .9;
-    }
-  }
-
-@keyframes colorchange{
-    from {
-        background-color: #f5e28e;
-    }
-    to {
-        background-color: #aee0d2;
-    }
-}
-
 /* COMMON */
 img {
     display: block;
@@ -299,45 +277,42 @@ body {
 }
 
 /* HOVER-MAMBER */
-.mamber-card{
+.team-mamber{
     position: relative;
+}
+
+.mamber-photo{
+    transition: transform 1s, box-shadow 1s;
 }
 
 .mamber-card-hover-layer{
     position: absolute;
-    width: 382px;
-    height: 472px;
     top: 0;
     left: 0;
-    background-size: contain; 
+    width: 382px;
+    height: 472px;
+    background-image: linear-gradient(rgb(217, 128, 128), rgb(245, 226, 142));
+    opacity: 0;
+    transition: transform 1s;
+}
+
+.team-mamber:hover .mamber-card-hover-layer,
+.team-mamber:hover .mamber-photo{
+    transform: translate(-10px, -10px);
 }
 
 .team-mamber:hover .mamber-card-hover-layer{
-    top: -12px;
-    left: -12px;
-    animation-name: appear;
-    animation-duration: 0.2s;
+    opacity: .9;
+}
+
+.team-mamber:hover .mamber-photo{
     box-shadow: 12px 12px #aee0d2;
 }
 
-
-.team-mamber:hover .man-glass{
-    background-image:  linear-gradient(rgba(217, 128, 128, .9), rgba(245, 226, 142, .9)), url(https://i.ibb.co/bvCRkkS/man-with-glasses.jpg);
-}
-
-.team-mamber:hover .man-camera{
-    background-image:  linear-gradient(rgba(217, 128, 128, .9), rgba(245, 226, 142, .9)), url(https://i.ibb.co/fYrKSBP/man-with-photo.jpg);
-}
-
-.team-mamber:hover .man-beard{
-    background-image:  linear-gradient(rgba(217, 128, 128, .9), rgba(245, 226, 142, .9)), url(https://i.ibb.co/9p0Q2zg/man-3.jpg);
-}
-
 /* MEMBER-SOCIALS */
-
 .socials{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -348,17 +323,17 @@ body {
 .socials a{
     display: block;
     height: 56px;
+    width: 56px;
     color: rgba(255, 255, 255, 0)
 }
 
 .team-mamber:hover .socials > li{
-    width: 56px;
     background-color: #f5e28e;
+    transform: translate(-10px, -10px);
+    transition: background-color 1s, transform 1s;
 }
 
 .team-mamber:hover .socials > li:hover{
-    animation-name: colorchange;
-    animation-duration: 1s;
     background-color: #aee0d2;
 }
 
