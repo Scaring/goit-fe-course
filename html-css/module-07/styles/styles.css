@@ -1,0 +1,329 @@
+@font-face{
+    font-family: "Montserrat";
+    src: url(../fonts/montserrat-v14-latin-regular.woff2);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Montserrat";
+    src: url(../fonts/montserrat-v14-latin-700.woff2);
+    font-weight: 700;
+    font-style: bold;
+}
+
+@font-face{
+    font-family: "Myriad";
+    src: url(../fonts/MyriadProRegular.woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Wisdom";
+    src: url(../fonts/vibur\(instead_of_wisdom\).woff2);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Droidserif";
+    src: url(../fonts/vollkorn\(instead_of_droidserif\).woff2);
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: "Robotoslab";
+    src: url(../fonts/roboto-slab-v9-latin-regular.woff2);
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* COMMON */
+body {
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
+.wrapper {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+header{
+    margin-top: 50px;
+    box-sizing: border-box;
+    margin-bottom: 128px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/* HEADER STYLES */
+.page-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-head a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+
+.logo a{
+    font-family: "Wisdom";
+    font-size: 26px;
+    line-height: 42px;
+    color: #f2d048;
+}
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 485px;
+    list-style: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 42px;
+}
+
+.navigation a{
+    text-transform: uppercase;
+    color: #272727;
+}
+
+.navigation a:hover{
+    color: #f2d048;
+}
+
+/* MAIN STYLES */
+.heading-title{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 40px;
+    color: #272727;
+}
+
+.heading-title::after{
+    content: '';
+    display: block;
+}
+
+.page-heading{
+    margin: 0;
+    padding: 0;
+    font-family: "Droidserif";
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    line-height: 18px;
+    color: #767676;
+    margin-bottom: 38px;
+}
+
+/* SECTION */
+.propositions{
+    margin-bottom: 126px;
+}
+
+.propositions ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.propositions ul>li{
+    padding-top: 120px;
+    position: relative;
+    width: 292px;
+}
+
+.proposition-title{
+    margin: 0;
+    padding: 0;
+}
+
+.proposition-description{
+    margin: 0;
+    padding: 0;
+    font-family: "Robotoslab";
+    font-weight: normal;
+}
+
+.propositions ul>li::before{
+    position: absolute;
+    content: '';
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 74px;
+    height: 74px;
+    border: 2px solid #f2d048;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.commerce::before{
+    background-image: url(https://i.ibb.co/CKn1DrX/Icon-Basket.png);
+    background-size: 40px auto;
+}
+
+.respon::before{
+    background-image: url(https://i.ibb.co/rfLtzWS/Icon-Laptop.png);
+    background-size: 36px auto;
+}
+
+.secure::before{
+    background-image: url(https://i.ibb.co/WVKqYYV/Icon-Locked.png);
+    background-size: 30px auto;
+}
+
+.proposition-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    color: #272727;
+}
+
+.proposition-description{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #767676;
+}
+
+/* FOOTER */
+footer{
+    position: relative;
+    min-height: 676px;
+    /* background-color: #272727; */
+}
+
+.background{
+    width: 100%;
+    background-color: #272727;
+    background-image: url(https://i.ibb.co/ftz8b3X/Map-Image.png);
+    background-repeat: no-repeat;
+    background-position: right 0 bottom 20px;
+    background-size: 612px auto;
+}
+
+/* FOOTHEAD */
+.foot_page-heading{
+    margin: 0;
+    padding: 0;
+    font-family: "Droidserif";
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    line-height: 18px;
+    color: #767676;
+    margin-bottom: 76px;
+    padding-top: 100px;
+}
+
+.foot_heading-title{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 40px;
+    color: #fff;
+}
+
+.foot_heading-title::after{
+    content: '';
+    display: block;
+}
+
+/* FORM STYLE */
+.client-message{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.needed_to_fill{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 214px;
+    justify-content: space-between;
+}
+
+.client-message input{
+    border: 1px solid rgb(203, 203, 203);
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    width: 432px;
+    height: 54px;
+    padding-left: 20px;
+    font-weight: 700;
+}
+
+.client-message input:focus:valid{
+    outline: 2px solid #00ff00;
+}
+
+.client-message input:focus:invalid{
+    outline: 2px solid #ff0000;
+}
+
+.client-message > input{
+    height: 210px;
+}
+
+.client-message input::placeholder{
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #bababa;
+    font-size: 14px;
+}
+
+.client-message > input::placeholder{
+    transform: translateY(-80px);
+}
+
+.subm-btn{
+    text-align: center;
+}
+
+.subm-btn button{
+    border: 0;
+    border-radius: 4px;
+    width: 240px;
+    height: 66px;
+    background-color: rgb(242, 208, 72);
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
+}
