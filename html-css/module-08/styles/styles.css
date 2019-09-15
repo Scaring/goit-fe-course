@@ -66,8 +66,6 @@ header{
 .user_action button{
     border: 0;
     background: none;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 20px;
     width: 90px;
     height: 40px;
     font-size: 14px;
@@ -77,11 +75,13 @@ header{
     cursor: pointer;
 }
 
-.user_action .log_in{
-    border: 0;
+.user_action button:hover{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
 }
 
 .promo {
+    text-decoration: none;
     text-transform: uppercase;
     color: #fff;
     font-size: 20px;
@@ -153,7 +153,7 @@ main ul{
     margin-bottom : 20px;
 }
 
-.users_list{
+.conteiner{
     max-width: 236px;
     margin: 0 auto;
 }
@@ -282,8 +282,11 @@ main ul{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        max-width: 492px;
         margin-bottom: 40px;
+    }
+
+    .conteiner{
+        max-width: 492px;
     }
 
     .users_list .person_card:not(:nth-child(-n + 2)){
@@ -296,7 +299,7 @@ main ul{
 }
 
 @media (min-width: 941px){
-    .users_list{
+    .conteiner{
         max-width: 940px;
     }
 
