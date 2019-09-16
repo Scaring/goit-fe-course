@@ -40,6 +40,11 @@ img {
     margin: 0 auto;
 }
 
+.conteiner{
+    max-width: 236px;
+    margin: 0 auto;
+}
+
 /* HEADER */
 header{
     text-align: center;
@@ -78,6 +83,7 @@ header{
 .user_action button:hover{
     border: 2px solid rgb(255, 255, 255);
     border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .promo {
@@ -87,6 +93,10 @@ header{
     font-size: 20px;
     line-height: 24px;
     margin: 0;
+}
+
+.promo:hover{
+    color: #de4f51;
 }
 
 .main_slogan{
@@ -120,6 +130,9 @@ header{
     cursor: pointer;
 }
 
+.find_partner:hover{
+    background-color: rgb(155, 63, 64);
+}
 /* MAIN */
 
 main{
@@ -153,11 +166,6 @@ main ul{
     margin-bottom : 20px;
 }
 
-.conteiner{
-    max-width: 236px;
-    margin: 0 auto;
-}
-
 .user_name{
     margin: 0;
     padding: 0;
@@ -186,6 +194,10 @@ main ul{
     font-size: 14px;
     color: rgb(222, 79, 81);
     cursor: pointer;
+}
+
+.see_other:hover{
+    background-color: rgba(0, 0, 0, .3);
 }
 
 /* CARD ICONS */
