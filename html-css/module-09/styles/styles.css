@@ -1,0 +1,327 @@
+@font-face{
+    font-family: "Montserrat";
+    src: url(../fonts/montserrat-v14-latin-400.woff2);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: "Montserrat";
+    src: url(../fonts/montserrat-v14-latin-700.woff2);
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face{
+    font-family: "Roboto";
+    src: url(../fonts/roboto-v20-latin-300.woff2);
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face{
+    font-family: "Roboto";
+    src: url(../fonts/roboto-v20-latin-400.woff2);
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    font-family: "Montserrat";
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+.wrapper{
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header{
+    padding-top: 20px;
+    padding-bottom: 120px;
+    background: linear-gradient( rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0.1)100%), url(https://i.ibb.co/jhJPfTB/Vector-Smart-Object.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.user_action button{
+    border: 0;
+    background: none;
+    max-width: 90px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.user_action button:hover{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.user_action{
+    margin-bottom: 120px;
+}
+
+.top_line{
+    margin-bottom: 40px;
+}
+
+.promo {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.promo:hover{
+    color: #de4f51;
+}
+
+.main_slogan{
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+    color: #fff;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sub_slogan{
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding: 0;
+    max-width: 220px;
+    color: #fff;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+}
+
+.find_partner{
+    border: 0;
+    border-radius: 20px;
+    background-color: rgb(222, 79, 81);
+    height: 40px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.find_partner:hover{
+    background-color: rgb(155, 63, 64);
+}
+
+/* MAIN */
+main{
+    margin-top: 0;
+    padding-top: 72px;
+    padding-bottom: 56px;
+    text-align: center;
+}
+
+.partner_slogan{
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    line-height: 26px;
+    color: #363636;
+    margin-bottom: 20px;
+}
+
+main ul{
+    list-style: none;
+    padding: 0;
+}
+
+.partner_slogan{
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    line-height: 26px;
+    color: #363636;
+    margin-bottom: 20px;
+}
+
+.person_card{
+    max-width: 234px;
+    margin-bottom: 30px;
+}
+
+.card_pictures{
+    margin: 0 auto;
+}
+
+.person_card img{
+    border-radius: 64px;
+    margin-bottom : 20px;
+}
+
+.user_name{
+    margin: 0 auto;
+    padding: 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: #363636;
+    margin-bottom: 20px;
+    max-width: 220px;
+}
+
+.user_descr{
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 14px;
+    max-width: 220px;
+}
+
+.see_other{
+    border: 0;
+    background: none;
+    border: 2px solid rgb(222, 79, 81);
+    border-radius: 20px;
+    height: 44px;
+    font-size: 14px;
+    color: rgb(222, 79, 81);
+    cursor: pointer;
+}
+
+.see_other:hover{
+    background-color: rgba(0, 0, 0, .3);
+}
+
+/* CARD ICONS */
+.card_pictures{
+    position: relative;
+    width: 122px;
+    padding: 0;
+}
+
+.card_pictures::after{
+    position: absolute;
+    content: '';
+    right: 0;
+    bottom: 0;
+    transform: translate(4px, 4px);
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.television::after{
+    background-color: #de4f51;
+    background-image: url(https://i.ibb.co/RYNm99V/Shape-128.png);
+}
+
+.alch::after{
+    background-color: #e9a328;
+    background-image: url(https://i.ibb.co/r2sgYXp/Shape-155.png);
+}
+
+.coffee::after{
+    background-color: #7bd6ae;
+    background-image: url(https://i.ibb.co/gv0cf8R/Shape-153.png);
+}
+
+.telegram::after{
+    background-color: #5b72d7;
+    background-image: url(https://i.ibb.co/Pg126Q1/Shape-170.png);
+}
+
+@media (min-width: 768px) and (max-width: 940px){
+    main{
+        padding-bottom: 40px;
+    }
+
+    .container{
+        max-width: 640px;
+    }
+
+    .users_list{
+        margin: 0 auto;
+        max-width: 470px;
+    }
+
+    .top_line {
+        margin-bottom: 140px;
+    }
+
+    .promo{
+        line-height: 40px;
+    }
+
+    .user_action{
+        margin-bottom: 0;
+    }
+
+    .main_slogan{
+        font-size: 52px;
+        line-height: 56px;
+    }
+
+    .sub_slogan{
+        max-width: 100%;
+        font-size: 24px;
+        line-height: 26px;
+        margin-bottom: 38px;
+    }
+
+    .find_partner{
+        max-width: 226px;
+    }
+
+    main{
+        padding-top: 74px;
+    }
+
+    .partner_slogan{
+        margin-bottom: 26px;
+    }
+
+    .user_list_first_line{
+        margin-bottom: 30px;
+    }
+
+    .see_other{
+        max-width: 197px;
+    }
+}
+
+@media (min-width: 940px){
+    .container{
+        max-width: 950px;
+    }
+
+    .users_list{
+        max-width: 940px;
+    }
+
+    .see_other,
+    .find_partner{
+        max-width: 220px;
+    }
+
+}
