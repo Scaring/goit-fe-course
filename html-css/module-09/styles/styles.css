@@ -23,6 +23,10 @@
     font-style: normal;
 }
 
+/* * {
+    outline: 1px solid #de4f51;
+} */
+
 body{
     font-family: "Montserrat";
     font-weight: 700;
@@ -120,6 +124,7 @@ header{
 .find_partner{
     border: 0;
     border-radius: 20px;
+    max-width: 280px;
     background-color: rgb(222, 79, 81);
     height: 40px;
     color: #fff;
@@ -153,6 +158,10 @@ main ul{
     padding: 0;
 }
 
+.users_list{
+    margin: 0 auto;
+}
+
 .partner_slogan{
     margin: 0;
     padding: 0;
@@ -163,7 +172,7 @@ main ul{
 }
 
 .person_card{
-    max-width: 234px;
+    max-width: 226px;
     margin-bottom: 30px;
 }
 
@@ -198,6 +207,7 @@ main ul{
 .see_other{
     border: 0;
     background: none;
+    max-width: 280px;
     border: 2px solid rgb(222, 79, 81);
     border-radius: 20px;
     height: 44px;
@@ -251,17 +261,16 @@ main ul{
     background-image: url(https://i.ibb.co/Pg126Q1/Shape-170.png);
 }
 
-@media (min-width: 768px) and (max-width: 940px){
+@media (min-width: 570px) and (max-width: 768px){
     main{
         padding-bottom: 40px;
     }
 
     .container{
-        max-width: 640px;
+        max-width: 484px;
     }
 
     .users_list{
-        margin: 0 auto;
         max-width: 470px;
     }
 
@@ -310,13 +319,13 @@ main ul{
     }
 }
 
-@media (min-width: 940px){
+@media (min-width: 768px) and (max-width: 992px){
     .container{
-        max-width: 950px;
+        max-width: 484px;
     }
 
     .users_list{
-        max-width: 940px;
+        max-width: 100%;
     }
 
     .see_other,
