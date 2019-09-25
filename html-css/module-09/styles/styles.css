@@ -23,9 +23,9 @@
     font-style: normal;
 }
 
-/* * {
+* {
     outline: 1px solid #de4f51;
-} */
+}
 
 body{
     font-family: "Montserrat";
@@ -261,7 +261,7 @@ main ul{
     background-image: url(https://i.ibb.co/Pg126Q1/Shape-170.png);
 }
 
-@media (min-width: 570px) and (max-width: 768px){
+@media (min-width: 576px) and (max-width: 768px){
     main{
         padding-bottom: 40px;
     }
