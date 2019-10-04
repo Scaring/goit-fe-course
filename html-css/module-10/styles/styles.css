@@ -19,9 +19,6 @@
     font-family: "KaushanScript"; 
     src: url(../fonts/KaushanScript-Regular.ttf); 
 }
-* {
-    outline: 1px solid teal;
-}
 
 /* COMMON */
 img {
