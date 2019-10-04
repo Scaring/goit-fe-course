@@ -133,6 +133,8 @@ ul {
     margin-bottom: 50px;
     padding-top: 30px;
     padding-bottom: 230px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(217, 128, 128, .9)), to(rgba(245, 226, 142, .9))), url(https://i.ibb.co/Rhkcqr8/eagle.jpg);
+    background: -o-linear-gradient(rgba(217, 128, 128, .9), rgba(245, 226, 142, .9)), url(https://i.ibb.co/Rhkcqr8/eagle.jpg);
     background: linear-gradient(rgba(217, 128, 128, .9), rgba(245, 226, 142, .9)), url(https://i.ibb.co/Rhkcqr8/eagle.jpg);
     background-position: center;
     background-size: cover;
@@ -140,8 +142,12 @@ ul {
 }
 
 .header__hat{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 200px;
 }
 
@@ -150,8 +156,12 @@ ul {
 .navigation {
     margin: 0;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 620px;
 }
 
@@ -232,13 +242,18 @@ ul {
 .services-list{
     margin: 0;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 .services-list > li {
-    flex-basis: 300px;
+    -ms-flex-preferred-size: 300px;
+        flex-basis: 300px;
     padding-left: 80px;
     position: relative;
 }
@@ -247,7 +262,9 @@ ul {
     content: '';
     left: 40px;
     top: 0;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     height: 32px;
     width: 32px;
     background-size: contain;
@@ -322,8 +339,12 @@ ul {
 .socials{
     margin: 0;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .mamber-photo{
@@ -359,7 +380,11 @@ ul {
 }
 
 .mamber-photo{
+    -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+    transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+    -o-transition: transform 0.3s, box-shadow 0.3s;
     transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
 }
 
 .team-section__mamber--hover{
@@ -368,14 +393,22 @@ ul {
     left: 0;
     width: 382px;
     height: 472px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(217, 128, 128)), to(rgb(245, 226, 142)));
+    background-image: -o-linear-gradient(rgb(217, 128, 128), rgb(245, 226, 142));
     background-image: linear-gradient(rgb(217, 128, 128), rgb(245, 226, 142));
     opacity: 0;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, -webkit-transform 0.3s;
+    -o-transition: transform 0.3s, opacity 0.3s;
     transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
 }
 
 .team-section__mamber:hover .team-section__mamber--hover,
 .team-section__mamber:hover .mamber-photo{
-    transform: translate(-10px, -10px);
+    -webkit-transform: translate(-10px, -10px);
+        -ms-transform: translate(-10px, -10px);
+            transform: translate(-10px, -10px);
 }
 
 .team-section__mamber:hover .team-section__mamber--hover{
@@ -383,7 +416,8 @@ ul {
 }
 
 .team-section__mamber:hover .mamber-photo{
-    box-shadow: 12px 12px #aee0d2;
+    -webkit-box-shadow: 12px 12px #aee0d2;
+            box-shadow: 12px 12px #aee0d2;
 }
 
 /* MEMBER-SOCIALS */
@@ -391,10 +425,16 @@ ul {
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     min-width: 230px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .socials a{
@@ -406,8 +446,14 @@ ul {
 
 .team-section__mamber:hover .socials__link{
     background-color: #f5e28e;
-    transform: translate(-10px, -10px);
+    -webkit-transform: translate(-10px, -10px);
+        -ms-transform: translate(-10px, -10px);
+            transform: translate(-10px, -10px);
+    -webkit-transition: background-color 0.3s, -webkit-transform 0.3s;
+    transition: background-color 0.3s, -webkit-transform 0.3s;
+    -o-transition: background-color 0.3s, transform 0.3s;
     transition: background-color 0.3s, transform 0.3s;
+    transition: background-color 0.3s, transform 0.3s, -webkit-transform 0.3s;
 }
 
 .team-section__mamber:hover .socials__link:hover{
@@ -446,8 +492,12 @@ ul {
 /* FOOTER */
 .footer{
     border-top: 1px solid rgb(228, 228, 228);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .footer__info{
@@ -466,6 +516,8 @@ ul {
 .subscribe{
     padding-top: 10px;
     margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -479,6 +531,34 @@ ul {
     font-family: "Roboto";
     font-size: 14px;
     line-height: 24px;
+}
+
+.subscribe__email::-webkit-input-placeholder{
+    font-family: "RobotoLightItalic";
+    font-size: 14px;
+    line-height: 24px;
+    color: #cccccc;
+}
+
+.subscribe__email::-moz-placeholder{
+    font-family: "RobotoLightItalic";
+    font-size: 14px;
+    line-height: 24px;
+    color: #cccccc;
+}
+
+.subscribe__email:-ms-input-placeholder{
+    font-family: "RobotoLightItalic";
+    font-size: 14px;
+    line-height: 24px;
+    color: #cccccc;
+}
+
+.subscribe__email::-ms-input-placeholder{
+    font-family: "RobotoLightItalic";
+    font-size: 14px;
+    line-height: 24px;
+    color: #cccccc;
 }
 
 .subscribe__email::placeholder{
@@ -508,8 +588,10 @@ ul {
 }
 
 
-@media (min-resolution: 192dpi), (min-resolution: 2dppx){
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx){
     .header{
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(217, 128, 128, .9)), to(rgba(245, 226, 142, .9))), url(https://i.ibb.co/WsXhRKT/eagle-2x.jpg);
+        background: -o-linear-gradient(rgba(217, 128, 128, .9), rgba(245, 226, 142, .9)), url(https://i.ibb.co/WsXhRKT/eagle-2x.jpg);
         background: linear-gradient(rgba(217, 128, 128, .9), rgba(245, 226, 142, .9)), url(https://i.ibb.co/WsXhRKT/eagle-2x.jpg);
     }
 
