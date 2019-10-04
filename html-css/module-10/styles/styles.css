@@ -515,4 +515,28 @@ ul {
     .header{
         background: linear-gradient(rgba(217, 128, 128, .9), rgba(245, 226, 142, .9)), url(https://i.ibb.co/WsXhRKT/eagle-2x.jpg);
     }
+
+    .photo::before{
+        background-image: url(https://i.ibb.co/7gPSnZz/ALARM.png);
+    }
+    
+    .design::before{
+        background-image: url(https://i.ibb.co/tBvQg1w/LINE-GRAPH.png);
+    }
+    
+    .creative::before{
+        background-image: url(https://i.ibb.co/XDc6nmY/COMPUTER-OK.png);
+    }
+    
+    .seo::before{
+        background-image: url(https://i.ibb.co/TBbPRQg/BOOK-2.png);
+    }
+    
+    .html::before{
+        background-image: url(https://i.ibb.co/9Hg7J92/HOME.png);
+    }
+    
+    .digital::before{
+        background-image: url(https://i.ibb.co/vvKMRqd/IMAGE.png);
+    }
 }
