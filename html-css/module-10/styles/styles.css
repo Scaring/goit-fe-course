@@ -1,0 +1,518 @@
+/* FONTS */
+@font-face {
+    font-family: "Roboto"; 
+    src: url(../fonts/Roboto-Regular.ttf); 
+}
+@font-face {
+    font-family: "RobotoLightItalic"; 
+    src: url(../fonts/Roboto-LightItalic.ttf); 
+}
+@font-face {
+    font-family: "Montserrat"; 
+    src: url(../fonts/Montserrat-Regular.ttf); 
+}
+@font-face {
+    font-family: "MontserratBold"; 
+    src: url(../fonts/Montserrat-Bold.ttf); 
+}
+@font-face {
+    font-family: "KaushanScript"; 
+    src: url(../fonts/KaushanScript-Regular.ttf); 
+}
+* {
+    outline: 1px solid teal;
+}
+
+/* COMMON */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* HEADINGS */
+.section-heading{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: "MontserratBold";
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px;
+    color: #363636;
+    margin-bottom: 66px;
+}
+
+.subheading {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+    font-family: "KaushanScript";
+    font-size: 24px;
+    line-height: 28px;
+    color: #363636;
+}
+
+.subheading::after{
+    display: block;
+    margin-top: 20px;
+    content: "";
+}
+
+.section-heading::after {
+    display: block;
+    margin: 0 auto;
+    margin-top: 42px;
+    content: "";
+    background-color: #d98080;
+    width: 60px;
+    height: 4px;
+}
+
+.header__heading {
+    margin: 0 auto;
+    margin-bottom: 124px;
+    width: 820px;
+    text-align: center;
+    font-family: "KaushanScript";
+    font-size: 72px;
+    color: #fff;
+    line-height: 86px;
+    font-weight: normal;
+}
+
+.header__heading--big{
+    font-family: "MontserratBold";
+    font-weight: normal;
+    font-size: 150px;
+    line-height: 140px;
+    text-transform: uppercase;
+}
+
+.header__heading--big::before{
+    display: block;
+    content: '';
+    height: 60px;
+}
+
+/* HEADER */
+.logo__link,
+.navigation__link {
+    text-decoration: none;
+    display: block;
+}
+
+.logo__link{
+    font-family: "MontserratBold";
+    font-size: 30px;
+    line-height: 36px;
+    color: #fff;
+}
+
+.logo__link:hover{
+    color: #f5e28e;
+}
+
+.header{
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 230px;
+    background: linear-gradient(rgba(217, 128, 128, .9), rgba(245, 226, 142, .9)), url(https://i.ibb.co/Rhkcqr8/eagle.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header__hat{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+/* NAVIGATION */
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+}
+
+.navigation__link{
+    padding-top: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "Montserrat";
+}
+
+.navigation__link::after {
+    display: block;
+    margin-top: 12px;
+    content: "";
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+}
+
+.navigation__link:hover{
+    color: #f5e28e;
+}
+
+.navigation__link:hover::after{
+    background-color: #f5e28e;
+    opacity: 1;
+}
+
+.navigation__link--bascket svg,
+.navigation__link--loop svg{
+    width: 18px;
+    height: 18px;
+    fill: rgb(255, 255, 255);
+}
+
+.navigation__link--bascket::after,
+.navigation__link--loop::after{
+    margin-top: 7px;
+}
+
+.navigation__link--bascket:hover .navigation__link--bascket svg,
+.navigation__link--loop:hover .navigation__link--loop svg{
+    fill: #f5e28e;
+}
+
+.header__button{
+    border: 0;
+    background: none;
+    border: 3px solid rgb(255, 255, 255);
+    width: 164px;
+    height: 44px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header__button-link{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "MontserratBold";
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.header__button:hover{
+    border-color: #f5e28e;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.header__button:hover .header__button-link{
+    color: #f5e28e;
+}
+
+/* MAIN */
+.services-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.services-list > li {
+    flex-basis: 300px;
+    padding-left: 80px;
+    position: relative;
+}
+
+.services-list > li::before{
+    content: '';
+    left: 40px;
+    top: 0;
+    transform: translateX(-50%);
+    height: 32px;
+    width: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}
+
+/* add img-icons here */
+.photo::before{
+    background-image: url(https://i.ibb.co/7gPSnZz/ALARM.png);
+}
+
+.design::before{
+    background-image: url(https://i.ibb.co/tBvQg1w/LINE-GRAPH.png);
+}
+
+.creative::before{
+    background-image: url(https://i.ibb.co/XDc6nmY/COMPUTER-OK.png);
+}
+
+.seo::before{
+    background-image: url(https://i.ibb.co/TBbPRQg/BOOK-2.png);
+}
+
+.html::before{
+    background-image: url(https://i.ibb.co/9Hg7J92/HOME.png);
+}
+
+.digital::before{
+    background-image: url(https://i.ibb.co/vvKMRqd/IMAGE.png);
+}
+
+.services-list__name{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 16px;
+    color: #363636;
+}
+
+.services-list__descr{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 100px;
+    font-family: "Roboto";
+    font-size: 15px;
+    line-height: 24px;
+    color: #989898;
+}
+
+/* TEAM */
+.team-info {
+    width: 980px;
+    margin: 0 auto;
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 24px;
+    color: #989898;
+    text-align: center;
+    margin-bottom: 96px;
+}
+
+.team-section{
+    margin-bottom: 86px;
+}
+
+.team-section__list,
+.socials{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mamber-photo{
+    margin-bottom: 30px;
+}
+
+.mamber-name,
+.mamber-position{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.mamber-name{
+    margin-bottom: 14px;
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #363636;
+}
+
+.mamber-position{
+    font-family: "RobotoLightItalic";
+    font-size: 14px;
+    line-height: 24px;
+    color: #989898;
+}
+
+/* HOVER-MAMBER */
+.team-section__mamber{
+    position: relative;
+}
+
+.mamber-photo{
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-section__mamber--hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 382px;
+    height: 472px;
+    background-image: linear-gradient(rgb(217, 128, 128), rgb(245, 226, 142));
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.team-section__mamber:hover .team-section__mamber--hover,
+.team-section__mamber:hover .mamber-photo{
+    transform: translate(-10px, -10px);
+}
+
+.team-section__mamber:hover .team-section__mamber--hover{
+    opacity: .9;
+}
+
+.team-section__mamber:hover .mamber-photo{
+    box-shadow: 12px 12px #aee0d2;
+}
+
+/* MEMBER-SOCIALS */
+.socials{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    min-width: 230px;
+    justify-content: space-between;
+}
+
+.socials a{
+    display: block;
+    height: 56px;
+    width: 56px;
+    color: rgba(255, 255, 255, 0)
+}
+
+.team-section__mamber:hover .socials__link{
+    background-color: #f5e28e;
+    transform: translate(-10px, -10px);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.team-section__mamber:hover .socials__link:hover{
+    background-color: #aee0d2;
+}
+
+/* SOCIAL ICONS */
+.team-section__mamber:hover .facebook{
+    background-image: url(https://i.ibb.co/PgDr4Ph/facebook.png);
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.team-section__mamber:hover .tweeter{
+    background-image: url(https://i.ibb.co/XLj9K89/twitter.png);
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.team-section__mamber:hover .pinterest{
+    background-image: url(https://i.ibb.co/VVnb8Bz/pinterest.png);
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.team-section__mamber:hover .instagram{
+    background-image: url(https://i.ibb.co/c18dGPM/instagram.png);
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* FOOTER */
+.footer{
+    border-top: 1px solid rgb(228, 228, 228);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__info{
+    margin: 0;
+    padding-top: 26px;
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 16px;
+    color: #363636;
+}
+
+.author{
+    color: #d98080;
+}
+
+.subscribe{
+    padding-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.subscribe__email{
+    border: 1px solid rgb(230, 230, 230);
+    border-right: none;
+    width: 234px;
+    height: 44px;
+    padding-left: 14px;
+    margin: 0;
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.subscribe__email::placeholder{
+    font-family: "RobotoLightItalic";
+    font-size: 14px;
+    line-height: 24px;
+    color: #cccccc;
+}
+
+.subscribe__submit{
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: rgb(174, 224, 210);
+    width: 150px;
+    height: 48px;
+    font-family: "MontserratBold";
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.subscribe__submit:hover{
+    background-color: rgb(122, 179, 163)
+}
+
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx){
+    .header{
+        background: linear-gradient(rgba(217, 128, 128, .9), rgba(245, 226, 142, .9)), url(https://i.ibb.co/WsXhRKT/eagle-2x.jpg);
+    }
+}
