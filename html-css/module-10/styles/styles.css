@@ -450,6 +450,7 @@ ul {
     width: 26px;
     height: 26px;
     fill: #d98080;
+    opacity: 1;
 }
 
 .team-section__mamber:hover .socials__link{
@@ -464,12 +465,16 @@ ul {
     transition: background-color 0.3s, transform 0.3s, -webkit-transform 0.3s;
 }
 
+.team-section__mamber:hover svg{
+    opacity: 0;
+}
+
 .team-section__mamber:hover .socials__link:hover{
     background-color: #aee0d2;
 }
 
 .team-section__mamber:hover .socials__link:hover svg{
-    fill: #f5e28e;
+    fill: #fff;
 }
 
 /* FOOTER */
