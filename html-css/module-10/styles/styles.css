@@ -202,13 +202,17 @@ ul {
 
 .navigation__link--bascket::after,
 .navigation__link--loop::after{
-    margin-top: 7px;
+    display: none;
 }
 
-.navigation__link--bascket:hover .navigation__link--bascket svg,
-.navigation__link--loop:hover .navigation__link--loop svg{
+.navigation__link:hover svg{
     fill: #f5e28e;
 }
+
+/* .navigation__link--bascket:hover .navigation__link--bascket svg,
+.navigation__link--loop:hover .navigation__link--loop svg{
+    fill: #f5e28e;
+} */
 
 .header__button{
     border: 0;
@@ -251,14 +255,14 @@ ul {
         justify-content: space-around;
 }
 
-.services-list > li {
+.services-list__item {
     -ms-flex-preferred-size: 300px;
         flex-basis: 300px;
     padding-left: 80px;
     position: relative;
 }
 
-.services-list > li::before{
+.services-list__item::before{
     content: '';
     left: 40px;
     top: 0;
@@ -274,27 +278,27 @@ ul {
 }
 
 /* add img-icons here */
-.photo::before{
+.services-list__item--photo::before{
     background-image: url(https://i.ibb.co/7gPSnZz/ALARM.png);
 }
 
-.design::before{
+.services-list__item--design::before{
     background-image: url(https://i.ibb.co/tBvQg1w/LINE-GRAPH.png);
 }
 
-.creative::before{
+.services-list__item--creative::before{
     background-image: url(https://i.ibb.co/XDc6nmY/COMPUTER-OK.png);
 }
 
-.seo::before{
+.services-list__item--seo::before{
     background-image: url(https://i.ibb.co/TBbPRQg/BOOK-2.png);
 }
 
-.html::before{
+.services-list__item--html::before{
     background-image: url(https://i.ibb.co/9Hg7J92/HOME.png);
 }
 
-.digital::before{
+.services-list__item--digital::before{
     background-image: url(https://i.ibb.co/vvKMRqd/IMAGE.png);
 }
 
