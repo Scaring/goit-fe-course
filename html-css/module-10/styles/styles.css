@@ -437,10 +437,19 @@ ul {
 }
 
 .socials a{
-    display: block;
+    display: flex;
     height: 56px;
     width: 56px;
-    color: rgba(255, 255, 255, 0)
+    color: rgba(255, 255, 255, 0);
+    justify-content: center;
+    align-items: center;
+}
+
+.socials svg{
+    display: block;
+    width: 26px;
+    height: 26px;
+    fill: #d98080;
 }
 
 .team-section__mamber:hover .socials__link{
@@ -459,34 +468,9 @@ ul {
     background-color: #aee0d2;
 }
 
-/* SOCIAL ICONS */
-/* .team-section__mamber:hover .facebook{
-    background-image: url(https://i.ibb.co/PgDr4Ph/facebook.png);
-    content: '';
-    background-repeat: no-repeat;
-    background-position: center;
+.team-section__mamber:hover .socials__link:hover svg{
+    fill: #f5e28e;
 }
-
-.team-section__mamber:hover .tweeter{
-    background-image: url(https://i.ibb.co/XLj9K89/twitter.png);
-    content: '';
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.team-section__mamber:hover .pinterest{
-    background-image: url(https://i.ibb.co/VVnb8Bz/pinterest.png);
-    content: '';
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.team-section__mamber:hover .instagram{
-    background-image: url(https://i.ibb.co/c18dGPM/instagram.png);
-    content: '';
-    background-repeat: no-repeat;
-    background-position: center;
-} */
 
 /* FOOTER */
 .footer{
