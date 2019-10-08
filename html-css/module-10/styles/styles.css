@@ -446,7 +446,7 @@ ul {
 }
 
 .socials svg{
-    display: block;
+    display: inline-block;
     width: 26px;
     height: 26px;
     fill: #d98080;
