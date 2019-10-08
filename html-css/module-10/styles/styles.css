@@ -450,7 +450,7 @@ ul {
     width: 26px;
     height: 26px;
     fill: #d98080;
-    opacity: 1;
+    opacity: 0;
 }
 
 .team-section__mamber:hover .socials__link{
@@ -466,7 +466,7 @@ ul {
 }
 
 .team-section__mamber:hover svg{
-    opacity: 0;
+    opacity: 1;
 }
 
 .team-section__mamber:hover .socials__link:hover{
