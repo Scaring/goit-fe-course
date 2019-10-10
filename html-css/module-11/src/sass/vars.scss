@@ -1,0 +1,124 @@
+// VAR-COLORS
+$hover-color: #f5e28e;
+$author-color: #d98080;
+$footer-button-color: #aee0d2;
+$footer-button-hover-color: #7ab3a3;
+
+
+// HEADER
+%logo-set {
+    font-family: "MontserratBold";
+    font-size: 30px;
+    line-height: 36px;
+    color: #fff;
+}
+
+%nav-set{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "Montserrat";
+}
+
+%main-heading-set {
+    font-family: "KaushanScript";
+    font-size: 72px;
+    color: #fff;
+    line-height: 86px;
+    font-weight: normal;
+}
+
+%main-big-heading-set{
+    font-family: "MontserratBold";
+    font-weight: normal;
+    font-size: 150px;
+    line-height: 140px;
+    text-transform: uppercase;
+}
+
+%button-set{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "MontserratBold";
+    font-size: 14px;
+    line-height: 16px;
+}
+
+// MAIN
+%section-heading--set{
+    font-family: "MontserratBold";
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px;
+    color: #363636;
+}
+
+%subheading--set{
+    text-transform: none;
+    font-family: "KaushanScript";
+    font-size: 24px;
+    line-height: 28px;
+    color: #363636;
+}
+
+%service__name--set{
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 16px;
+    color: #363636;
+}
+
+%service__descr--set{
+    font-family: "Roboto";
+    font-size: 15px;
+    line-height: 24px;
+    color: #989898;
+}
+
+// TEAM
+%team-info--set{
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 24px;
+    color: #989898;
+}
+
+%mamber-name--set{
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #363636;
+}
+
+%mamber-position--set{
+    font-family: "RobotoLightItalic";
+    font-size: 14px;
+    line-height: 24px;
+    color: #989898;
+}
+
+// FOOTER
+%foot-info--set{
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 16px;
+    color: #363636;
+}
+
+%email-set{
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+}
+
+%email__placeholder--set{
+    font-family: "RobotoLightItalic";
+    font-size: 14px;
+    line-height: 24px;
+    color: #cccccc;
+}

@@ -1,0 +1,30 @@
+.section-heading{
+    @extend %section-heading--set;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 66px;
+    text-align: center;
+
+    &::after {
+        display: block;
+        margin: 0 auto;
+        margin-top: 42px;
+        content: "";
+        background-color: #d98080;
+        width: 60px;
+        height: 4px;
+    }
+}
+
+.subheading {
+    @extend %subheading--set;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    &::after{
+        display: block;
+        margin-top: 20px;
+        content: "";
+    }
+}

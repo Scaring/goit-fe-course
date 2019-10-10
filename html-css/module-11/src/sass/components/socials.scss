@@ -1,0 +1,47 @@
+.socials{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    min-width: 230px;
+    justify-content: space-between;
+
+    & a{
+        display: flex;
+        height: 56px;
+        width: 56px;
+        color: rgba(255, 255, 255, 0);
+        justify-content: center;
+        align-items: center;
+    }
+
+    & svg{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        fill: #d98080;
+        opacity: 0;
+    }
+}
+
+
+.team-section__mamber:hover .socials__link{
+    background-color: #f5e28e;
+    transform: translate(-10px, -10px);
+    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.team-section__mamber:hover svg{
+    opacity: 1;
+}
+
+.team-section__mamber:hover .socials__link:hover{
+    background-color: #d98080;
+}
+
+.team-section__mamber:hover .socials__link:hover svg{
+    fill: #fff;
+}

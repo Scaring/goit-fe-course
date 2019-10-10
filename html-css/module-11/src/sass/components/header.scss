@@ -1,0 +1,47 @@
+.logo__link,
+.navigation__link {
+    text-decoration: none;
+    display: block;
+}
+
+.logo__link{
+    @extend %logo-set;
+
+    &:hover{
+        color: $hover-color;
+    }
+}
+
+.header{
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 230px;
+    background: linear-gradient(rgba(217, 128, 128, .9), rgba(245, 226, 142, .9)), url(https://i.ibb.co/Rhkcqr8/eagle.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__hat{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 200px;
+    }
+
+    &__heading {
+        margin: 0 auto;
+        margin-bottom: 124px;
+        width: 820px;
+        text-align: center;
+        @extend %main-heading-set;
+    
+        &--big{
+            @extend %main-big-heading-set;
+    
+            &::before{
+                display: block;
+                content: '';
+                height: 60px;
+            }
+        }
+    }
+}

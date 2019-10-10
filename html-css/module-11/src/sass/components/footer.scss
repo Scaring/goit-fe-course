@@ -1,0 +1,50 @@
+.footer{
+    border-top: 1px solid #e4e4e4;
+    display: flex;
+    justify-content: space-between;
+
+    &__info{
+        @extend %foot-info--set;
+        margin: 0;
+        padding-top: 26px;
+    }
+}
+
+.author{
+    color: $author-color;
+}
+
+.subscribe{
+    padding-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+
+    &__email{
+        @extend %email-set;
+        border: 1px solid #e6e6e6;
+        border-right: none;
+        width: 234px;
+        height: 48px;
+        padding-left: 14px;
+        margin: 0;
+
+        &::placeholder{
+            @extend %email__placeholder--set;
+        }
+    }
+
+    &__submit{
+        @extend %button-set;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: $footer-button-color;
+        width: 150px;
+        height: 48px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $footer-button-hover-color;
+        }
+    }
+}

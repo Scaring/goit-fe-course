@@ -1,0 +1,75 @@
+.team-info {
+    @extend %team-info--set;
+    width: 980px;
+    margin: 0 auto;
+    margin-bottom: 96px;
+    text-align: center;
+}
+
+.team-section{
+    margin-bottom: 86px;
+}
+
+.team-section__list,
+.socials{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mamber-photo{
+    margin-bottom: 30px;
+}
+
+.mamber-name,
+.mamber-position{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.mamber-name{
+    @extend %mamber-name--set;
+    margin-bottom: 14px;
+}
+
+.mamber-position{
+    @extend %mamber-position--set;
+}
+
+/* HOVER-MAMBER */
+.team-section__mamber{
+    position: relative;
+}
+
+.mamber-photo{
+    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-section__mamber--hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 382px;
+    height: 472px;
+    background-image: linear-gradient(rgb(217, 128, 128), rgb(245, 226, 142));
+    opacity: 0;
+    transition: opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.team-section__mamber:hover .team-section__mamber--hover,
+.team-section__mamber:hover .mamber-photo{
+    transform: translate(-10px, -10px);
+}
+
+.team-section__mamber:hover .team-section__mamber--hover{
+    opacity: .9;
+}
+
+.team-section__mamber:hover .mamber-photo{
+    box-shadow: 12px 12px #aee0d2;
+}

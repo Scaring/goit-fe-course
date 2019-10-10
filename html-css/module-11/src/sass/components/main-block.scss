@@ -1,0 +1,40 @@
+.services-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    &__item {
+        width: 310px;
+        padding-left: 80px;
+        position: relative;
+        text-align: left;
+        &::before{
+            content: '';
+            left: 40px;
+            top: 0;
+            transform: translateX(-50%);
+            height: 32px;
+            width: 32px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+        }
+    }
+
+    &__name{
+        @extend %service__name--set;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    &__descr{
+        @extend %service__descr--set;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 100px;
+    }
+}

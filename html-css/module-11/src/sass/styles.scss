@@ -1,0 +1,22 @@
+/*
+   Import partials below
+*/
+@import './helper/list.scss';
+@import './helper/var.scss';
+@import './helper/fonts.scss';
+@import './normalize.scss';
+@import './base.scss';
+@import './components/fonts.scss';
+@import './vars.scss';
+
+/* COMPONENTS */
+
+@import './components/common.scss';
+@import './components/headings.scss';
+@import './components/header.scss';
+@import './components/navigation.scss';
+@import './components/main-block.scss';
+@import './components/serv-list-icons.scss';
+@import './components/team.scss';
+@import './components/socials.scss';
+@import './components/footer.scss';
